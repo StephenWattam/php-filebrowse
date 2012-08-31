@@ -37,7 +37,7 @@ function format_human_size($size, $bin) {
     $k = 1000;
     $units = array('&nbsp;B', 'KB', 'MB', 'GB', 'TB');
     if($bin){
-	$units = array('&nbsp;B', 'KiB', 'MiB', 'GiB', 'TiB');
+	$units = array('&nbsp;&nbsp;B', 'KiB', 'MiB', 'GiB', 'TiB');
 	$k = 1024;
     }
     for ($i = 0; $size >= $k && $i < 4; $i++) $size /= $k;
